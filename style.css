@@ -1,0 +1,211 @@
+:root{
+  --color-one: #c7fcc9;  /*verdinho claro*/
+  --color-two: yellow;
+  --color-three: black;
+  --color-four: #ff008c;  /*rosa avermelhado*/
+  
+  /*alterarTema() alterna body por clear*/
+  --transparente: ;
+  --azul: #00a0ad;
+  --cinza-escuro: #3a4054;
+  --rosa: #fcc5d9;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image:url('https://wallpaperaccess.com/full/710810.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.italic {
+ font-style: italic; 
+}
+
+.circle {
+  border-radius: 100%; 
+}
+
+.perfil {
+  display: flex;
+  align-items:center;
+}
+
+#nome{
+  transform: translate(10%, 5%);
+  font-size: 16px;
+}
+
+#container{
+  position: relative;
+  height: 100vh;
+}
+
+#principal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 450px;
+  height: 450px;  
+  
+  background-color: var(--color-one);
+  color: var(--color-three);
+}
+
+.shadow{
+  -webkit-box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.81); 
+box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.81);
+}
+
+#foto{
+  width: 125px;
+  height: 125px;
+  filter: contrast(120%) grayscale(100%);
+  transform: translate(-10%, -10%);
+}
+
+#projetos{
+  font-size: 13px;
+  margin-left: 28%;
+  margin-top: 5%;
+}
+
+a:link {
+  color: var(--color-three);
+  text-decoration:none
+}
+
+#projetos a:visited {
+  color: var(--color-three);
+  text-decoration:none
+}
+
+#projetos a:hover{
+  color: var(--color-four);
+}
+
+.redes{
+  position: absolute;
+  height:70px;
+  width:70px;
+  background-color: var(--color-three);
+}
+#github{
+  right: 150px;
+  display:flex;
+  align-items: center;
+  color: var(--color-two);
+}
+#codepen{
+  right: 75px;
+  display:flex;
+  align-items: center;
+  color: var(--color-two);;
+}
+#linkedin{
+  right: 0px;
+  display:flex;
+  align-items: center;
+  color: var(--color-two);;
+}
+
+.redes a:visited {
+  color: var(--color-two);;
+  text-decoration:none
+}
+
+.redes a:hover{
+  color: var(--color-four);
+}
+.redes a{
+  color: var(--color-two);;
+}
+
+section#projetos-imersao{
+ position:relative;
+}
+
+.codepen{
+  padding-bottom:5%; ;
+  padding-right: 10%;;
+  padding-left: 10%; 
+}
+
+.codepen h3{
+  color:var(--color-two);;
+}
+
+#tema{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  height:60px;
+  width:60px;
+  transform: translate(200%, -15%);
+  background-color: var(--color-one);
+}
+
+#tema:hover{
+  color: var(--color-four);
+}
+
+/*alterarTema() _____________________________________________________*/
+
+.clear{
+ background-image: url('https://cdn.europosters.eu/image/1300/art-photo/black-and-white-clouds-i95971.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.clear #tema{
+  background-color: var(--transparente);
+  color: var(--cinza-escuro);
+}
+
+.clear #tema:hover{
+  color: var(--azul);
+}
+
+.clear #principal{
+  background-color: var(--transparente);
+  color: var(--cinza-escuro);
+}
+
+.clear .redes{
+   background-color: var(--rosa);
+   color: var(--cinza-escuro);
+}
+.clear .redes a:visited {
+  color: var(--cinza-escuro);;
+  text-decoration:none
+}
+
+.clear .redes a:hover{
+  color: var(--azul);
+}
+.clear .redes a{
+  color: var(--cinza-escuro);
+}
+
+
+.clear #projetos a:visited {
+  color: var(--cinza-escuro);
+  text-decoration:none
+}
+
+.clear #projetos a:hover{
+  color: var(--azul);
+}
+
+.clear #foto{
+  filter: grayscale(0%);
+}
+
+.clear .codepen h3{
+  color: var(--azul);
+}
